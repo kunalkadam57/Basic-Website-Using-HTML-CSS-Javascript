@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			display:inline-block;
+		}
+		.galleryimage{
+			width: 60%;
+			margin-left: 20%;
+			position: relative;
+		}
+		.galleryimage img{
+			width: 100%;
+		}
+		.cover{
+			background-color: #fd6b6b;
+			position:absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: 0.5s;
+		}
+		.galleryimage:hover .cover{
+			opacity: 1;
+		}
+		.cover .title{
+			font-weight: 20px;
+			width: 90%;
+			margin-left: 10%;
+		}
+		.cover .content{
+			margin-top: 20px;
+			width: 90%;
+			margin-left: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="galleryimage">
+		<img src="onion.webp">
+		<div class="cover">
+			<p class="title">Work 1</p>
+			<p class="content">Some text</p>
+		</div>
+	</div>
+</body>
+</html>
